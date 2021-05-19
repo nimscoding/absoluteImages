@@ -1,38 +1,158 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.66;
+  font-weight: 200;
+  font-family: "Work Sans", sans-serif;
+}
+
+.chooseContainer {
+  padding: 5.625rem 0 5rem;
+  font-size: 1.25vw;
   text-align: center;
+  line-height: 1.2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chooseWrap {
+  max-width: 100%;
+  padding-left: 5.625em;
+  padding-right: 5.625em;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contentWrap {
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.beforeTitle {
+  font-size: 0.875em;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.625rem;
+}
+
+.title {
+  font-size: 3.375rem;
+  font-family: MillerBanner;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.1875em;
+  line-height: 1.4em;
+  width: 62%;
+  margin: 0 auto 4.375rem;
+}
+
+.sliderWrap {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 4.5rem;
+  font-size: 1.25vw;
 }
 
-.App-link {
-  color: #61dafb;
+.aStyle {
+  width: 25%;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sliderWrap a:nth-child(1):hover {
+  transform: translateY(-1.25rem);
+  transition: all 1s;
+}
+.sliderWrap a:nth-child(2):hover {
+  transform: translateY(-1.25rem);
+  transition: all 1s;
+}
+.sliderWrap a:nth-child(3):hover {
+  transform: translateY(-1.25rem);
+  transition: all 1s;
+}
+
+.divStyle {
+  box-shadow: 0 5px 21px 0 rgba(81, 81, 81, 0.18);
+  padding-bottom: 138%;
+  background-size: 100% auto;
+  background-position: 50% 0;
+  margin-bottom: 1.875rem;
+  border-radius: 10px;
+}
+
+.divStyle:hover {
+  animation: autoscroll 12s ease-out infinite;
+}
+
+.desc1 {
+  font-size: 1.1875rem;
+}
+
+@keyframes autoscroll {
+  0% {
+    background-position: 0 0;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
+
+@media (max-width: 48em) {
+  .chooseContainer {
+    padding: 3.75rem 0 3.33rem;
+    font-size: 16px;
+  }
+
+  .sliderWrap {
+    display: block;
+  }
+
+  .chooseWrap {
+    max-width: 1081px;
+    padding: 0 20px;
+  }
+
+  .text {
+    width: 100%;
+    margin-bottom: 4.375rem;
   }
 }
