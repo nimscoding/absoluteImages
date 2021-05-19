@@ -1,52 +1,48 @@
 import "./App.css";
+import imageLeft from "./images/imageLeft.jpg";
+import imageRight from "./images/imageRight.jpg";
+import imageMiddle from "./images/imageMiddle.jpg";
+import title from "./images/title.png";
 
 export default function App() {
   return (
-    <section className="chooseContainer">
-      <div className="chooseWrap">
-        <div className="contentWrap">
-          <div className="beforeTitle">no code needed </div>
-          <div className="title">Start with a template</div>
-          <div className="text">
-            Each design comes with a selection of premade layouts and content
-            blocks to help you build a professional website, fast. Customize
-            fonts, colors and the structure of your pages. Enjoy maximum control
-            over your desktop and mobile site.
-          </div>
-          <div className="sliderWrap">
-            <a className="aStyle" href="www.youtube.com">
-              <div
-                className="divStyle"
-                style={{ backgroundImage: `url(/images/JuneTheme.jpg)` }}
-              ></div>
-              <div className="desc1">
-                mono/
-                <span> Minimal &amp; Versatile </span>
+    <div>
+      <div className="sector">
+        <div className="innerSector">
+          <div className="mediaq">
+            <div className="mainContainer">
+              <div className="title">
+                <img src={title} alt="" />
               </div>
-            </a>
-            <a className="aStyle" href="www.youtube.com">
-              <div
-                className="divStyle"
-                style={{ backgroundImage: `url(/images/MonoTheme.jpg)` }}
-              ></div>
-              <div className="desc1">
-                June/
-                <span> Bossy, Fun &amp; Stylish</span>
+              <div className="imageLeft">
+                <img src={imageLeft} alt="" />
               </div>
-            </a>
-            <a className="aStyle" href="www.youtube.com">
-              <div
-                className="divStyle"
-                style={{ backgroundImage: `url(/images/VelvetTheme.jpg)` }}
-              ></div>
-              <div className="desc1">
-                Velvet/
-                <span> Minimal &amp; Versatile </span>
+              <div className="imageMiddle">
+                <img src={imageMiddle} alt="" />
               </div>
-            </a>
+              <div className="imageRight">
+                <img src={imageRight} alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+      <section>
+        <div style={{ background: "lightblue", height: "100vh" }}></div>
+      </section>
+    </div>
   );
 }
+
+/*https://marcoabba.com/ 
+https://steibweddings.com/
+
+for badges
+https://actsofadventure.com/
+https://madeinvideo.es/en/
+
+footer
+https://www.yidakistudio.com/
+
+
+*/

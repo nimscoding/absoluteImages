@@ -1,158 +1,215 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
-body {
-  line-height: 1.66;
-  font-weight: 200;
-  font-family: "Work Sans", sans-serif;
+html {
+  font-size: 100%;
 }
 
-.chooseContainer {
-  padding: 5.625rem 0 5rem;
-  font-size: 1.25vw;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.chooseWrap {
+.sector {
+  font-family: sans-serif;
   max-width: 100%;
-  padding-left: 5.625em;
-  padding-right: 5.625em;
-  margin: 0 auto;
-}
-
-.contentWrap {
   position: relative;
+  margin: 0;
+  padding: 0;
+  transform: none !important;
+  padding: 0 !important;
 }
 
-.beforeTitle {
-  font-size: 0.875em;
+.innerSector {
+  margin: 0;
+  padding: 0;
+}
 
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.625rem;
+.mediaq {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  position: relative;
+  height: 50em;
+  background-color: #f6f6f4;
+  color: #000;
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.25vw;
 }
 
 .title {
-  font-size: 3.375rem;
-  font-family: MillerBanner;
-  letter-spacing: -0.02em;
-  margin-bottom: 1rem;
-}
-
-.text {
-  font-size: 1.1875em;
-  line-height: 1.4em;
-  width: 62%;
-  margin: 0 auto 4.375rem;
-}
-
-.sliderWrap {
-  position: relative;
+  position: absolute;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 4.5rem;
-  font-size: 1.25vw;
+  width: 23.95164em;
+  height: 7.33259em;
+  top: 5.0718em;
+  left: 28.77551em;
+  z-index: 8;
+  opacity: 1;
+  border-radius: 0px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  line-height: 1.15;
+  overflow: hidden;
+  object-position: 50% 50%;
 }
 
-.aStyle {
-  width: 25%;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  color: inherit;
+.title img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-.sliderWrap a:nth-child(1):hover {
-  transform: translateY(-1.25rem);
-  transition: all 1s;
-}
-.sliderWrap a:nth-child(2):hover {
-  transform: translateY(-1.25rem);
-  transition: all 1s;
-}
-.sliderWrap a:nth-child(3):hover {
-  transform: translateY(-1.25rem);
-  transition: all 1s;
-}
-
-.divStyle {
-  box-shadow: 0 5px 21px 0 rgba(81, 81, 81, 0.18);
-  padding-bottom: 138%;
-  background-size: 100% auto;
-  background-position: 50% 0;
-  margin-bottom: 1.875rem;
-  border-radius: 10px;
+.imageLeft {
+  position: absolute;
+  display: flex;
+  width: 24.63542em;
+  height: 36.95387em;
+  top: 3.40513em;
+  left: -0.19048em;
+  z-index: 1;
+  opacity: 1;
+  border-radius: 0px;
+  /* object-fit: cover; */
+  object-position: 50% 50%;
+  overflow: hidden;
 }
 
-.divStyle:hover {
-  animation: autoscroll 12s ease-out infinite;
+.imageLeft img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-.desc1 {
-  font-size: 1.1875rem;
+.imageMiddle {
+  position: absolute;
+  display: flex;
+  width: 43.47619em;
+  height: 28.0506em;
+  top: 22.04762em;
+  left: 20.57143em;
+  z-index: 2;
+  opacity: 1;
+  border-radius: 0px;
+  object-position: 50% 50%;
+  overflow: hidden;
 }
 
-@keyframes autoscroll {
-  0% {
-    background-position: 0 0;
+.imageMiddle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.imageRight {
+  position: absolute;
+  display: flex;
+  width: 20.06994em;
+  height: 27.95461em;
+  height: 27.95461em;
+  top: 7.90476em;
+  left: 59.95238em;
+  z-index: 3;
+  opacity: 1;
+  border-radius: 0px;
+  object-position: 50% 50%;
+  overflow: hidden;
+}
+
+.imageRight img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .imageLeft {
+    width: 17.75em;
+    height: 25.47693em;
+    top: 18.66667em;
+    left: 0em;
+    z-index: 1;
+    opacity: 1;
+    border-radius: 0px;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
-  50% {
-    background-position: 0 100%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-  0% {
-    background-position: 50% 0;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0;
-  }
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 0 100%;
-  }
-  100% {
-    background-position: 0 0;
-  }
-  0% {
-    background-position: 50% 0;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0;
+}
+/*adding this media query below to maincontainer changed it to 
+column for mobile screen (the font-size property changed it)*/
+@media only screen and (max-width: 767px) {
+  .mediaq .mainContainer {
+    font-size: 4.2666666666667vw;
+    height: 64.125em;
+    margin-top: 0em;
+    margin-bottom: 0em;
   }
 }
 
-@media (max-width: 48em) {
-  .chooseContainer {
-    padding: 3.75rem 0 3.33rem;
-    font-size: 16px;
+@media only screen and (min-width: 768px) {
+  .mediaq {
+    font-size: 1.25vw;
+    height: 50em;
+    margin-top: 0em;
+    margin-bottom: 0em;
   }
+}
 
-  .sliderWrap {
-    display: block;
+@media only screen and (max-width: 767px) {
+  .title {
+    width: 21.23797em;
+    height: 6.57115em;
+    height: 6.57115em;
+    top: 2.43607em;
+    left: -1.90702em;
+    z-index: 5;
+    opacity: 1;
+    border-radius: 0px;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
+}
 
-  .chooseWrap {
-    max-width: 1081px;
-    padding: 0 20px;
+@media only screen and (max-width: 767px) {
+  .imageMiddle {
+    width: 21.83333em;
+    height: 13.28795em;
+    top: 11.57143em;
+    left: 1.62909em;
+    z-index: 2;
+    opacity: 1;
+    border-radius: 0px;
+    object-fit: cover;
+    object-position: 0% 100%;
   }
+}
 
-  .text {
-    width: 100%;
-    margin-bottom: 4.375rem;
+@media only screen and (max-width: 767px) {
+  .imageRight {
+    width: 16.47768em;
+    height: 20.57366em;
+    top: 43.63653em;
+    left: 6.98475em;
+    z-index: 3;
+    opacity: 1;
+    border-radius: 0px;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
 }
